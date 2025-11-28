@@ -38,8 +38,7 @@ st.markdown("""
 
 @st.cache_data
 def load_data():
-    df = pd.read_excel('C:\\Users\\Dennis\\PycharmProjects\\Lucifer\\pythonProject8\\Pymes y variables_ING.xlsx')
-
+    df = pd.read_excel('Pymes y variables_ING.xlsx')
     sector_names = {
         "Sector 11": "Agricultura, cría y explotación de animales, aprovechamiento forestal, pesca y caza",
         "Sector 21": "Minería",
@@ -525,4 +524,5 @@ if st.session_state.resultados_regresion is not None:
         st.markdown("- Las variables seleccionadas explican bien el comportamiento de la variable objetivo")
 
 st.markdown("---")
+
 st.caption("Aplicación de Machine Learning | K-Means Clustering & Regresión Lineal")
